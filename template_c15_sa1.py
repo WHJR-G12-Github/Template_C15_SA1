@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import pygame, sys,random
 import neat
 
@@ -52,7 +50,7 @@ def eval_fitness(generation, config):
     global gen
     birdcount=0
     gen = gen+1
-    #print("Generation:",gen)
+    
     for gid, genome in generation: 
         # Initialize 'genome.fitness'(fitness of a genome) to 0
         genome.fitness = 0 
