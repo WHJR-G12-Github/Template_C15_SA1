@@ -54,7 +54,7 @@ def eval_fitness(generation, config):
     for gid, genome in generation: 
         # Initialize 'genome.fitness'(fitness of a genome) to 0
         genome.fitness = 0 
-        net = neat.nn.FeedForwardNetwork.create(genome, config) #creating a neural network for a genome
+        net = neat.nn.FeedForwardNetwork.create(genome, config) 
         pipe1 = Pipe(250)
         bird1 = Bird() 
         
